@@ -6,9 +6,25 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-.img-sqaLogo{
-	right: 100px;
+	
+.tm{
+	position: relative;
+	left:990px;
+	top: 50px;
 }
+/*Logo*/
+
+	.img-sqaLogo{
+		position: relative;
+		left: 100px;
+	}
+
+	/*Logo*/
+
+	.bg-orange {
+		background-color: orange;
+	}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -86,7 +102,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #1c1d26;
+		background: #67686b;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3060,7 +3076,7 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/overlay.png");
+			background-image: url("images/overlay.jpg");
 			content: '';
 			display: block;
 			height: 100%;
@@ -3377,10 +3393,10 @@ input, select, textarea {
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+		background: #30343f;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
-		height: 3.5em;
+		height: 5em;
 		left: 0;
 		line-height: 3.5em;
 		position: fixed;
@@ -3401,7 +3417,8 @@ input, select, textarea {
 		#header nav {
 			position: absolute;
 			right: 1em;
-			top: 0;
+			top: 10px;
+			font-weight: bold;
 		}
 
 			#header nav ul {
@@ -3450,12 +3467,12 @@ input, select, textarea {
 		position: absolute;
 	}
 
-/* Banner */
+
+	/* Banner */
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-color: #30343f;
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3474,10 +3491,7 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			
 			content: '';
 			display: block;
 			height: 100%;
