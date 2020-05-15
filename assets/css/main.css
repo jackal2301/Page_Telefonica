@@ -7,10 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 	
-.tm{
-	position: relative;
-	left:990px;
-	top: 50px;
+
 }
 /*Logo*/
 
@@ -102,7 +99,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #67686b;
+		background: #4d4e50;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2198,6 +2195,21 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
+	h2.Nu-equ {
+		top: 50px;
+		position: relative;
+	}
+
+	p.p-desc {
+		top: 40px;
+		position: relative;
+	}
+
+	h2.Pro-cal {
+		top: 50px;
+		position: relative;
+	}
+
 	header.major {
 		margin: 0 0 4em 0;
 		position: relative;
@@ -2205,7 +2217,7 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #271ea8;
+			background: rgba(243,160,0,1);
 			content: '';
 			display: inline-block;
 			height: 0.2em;
