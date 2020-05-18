@@ -7,8 +7,59 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 	
-
+#cont4 {
+	margin: 40px 100px;
+	padding: 20px;
+	width: 80%;
+	height: 400px;
+	margin-top: 350px;
+	
 }
+
+	#cont3 {
+		margin: 40px 100px;
+		padding: 20px;
+		width: 80%;
+		height: 400px;
+		margin-top: 150px;
+		
+	}	
+	#table {
+		
+		width: 60%;
+		height: 200px;
+		margin-left: 250px;
+	
+	}
+
+	#img-cont2 {
+		width: 550px;
+		height: 350px;
+		margin-left: 150px;
+		margin-top: 10px;
+	}
+
+	#cont2 {
+		margin: 40px 100px;
+		padding: 20px;
+		width: 50%;
+		height: 400px;
+		
+	}
+
+	#img-wh{
+		width: 250px;
+		height: 250px;
+		margin-top: -400px;
+		margin-left: 800px;
+	}
+
+	#cont1 {
+		margin: 40px 100px;
+		padding: 20px;
+		width: 50%;
+		height: 400px;
+	}
 /*Logo*/
 
 	.img-sqaLogo{
@@ -16,10 +67,10 @@
 		left: 100px;
 	}
 
-	/*Logo*/
 
-	.bg-orange {
-		background-color: orange;
+
+    .div-row {
+		text-align: center;
 	}
 
 
@@ -127,12 +178,12 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #271ea8;
+		color: #ffffff;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #271ea8 !important;
+			color: #ffffff !important;
 			border-bottom-color: transparent;
 		}
 
@@ -212,7 +263,7 @@ input, select, textarea {
 	blockquote {
 		border-left: solid 4px rgba(255, 255, 255, 0.3);
 		font-style: italic;
-		margin: 0 0 2em 0;
+		margin: 0 0 2rem 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
 
@@ -2394,7 +2445,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #271ea8;
+			border-color: #ffffff;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2891,8 +2942,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #271ea8;
-			color: #271ea8 !important;
+			box-shadow: inset 0 0 0 1px #ffffff;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"]:active,
@@ -2934,7 +2985,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #271ea8;
+			background-color: #ffffff;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2943,14 +2994,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #271ea8;
+				background-color: #ffffff;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #271ea8;
+				background-color: #ffffff;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3175,7 +3226,7 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #271ea8;
+			border-color: #ffffff;
 		}
 
 		.spotlight.style2 .content {
@@ -3237,7 +3288,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #271ea8;
+			background: #ffffff;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3272,7 +3323,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
 				background-color: #ffffff;
-				color: #271ea8 !important;
+				color: #ffffff !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
@@ -3376,7 +3427,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #271ea8;
+				color: #ffffff;
 			}
 
 		.dropotron.level-0 {
@@ -3467,7 +3518,7 @@ input, select, textarea {
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #271ea8;
+						color: #ffffff;
 					}
 
 					#header nav ul li > ul {
@@ -3964,7 +4015,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #271ea8;
+						background: #ffffff;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
