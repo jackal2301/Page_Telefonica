@@ -7,14 +7,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 	
-#cont4 {
-	margin: 40px 100px;
-	padding: 20px;
-	width: 80%;
-	height: 400px;
-	margin-top: 350px;
-	
-}
+	#glo {
+		line-height: 2em;
+		margin: 40px 100px;
+	}
+
+	#cont4 {
+		margin: 40px 100px;
+		padding: 20px;
+		width: 80%;
+		height: 400px;
+		margin-top: 350px;
+		
+	}
 
 	#cont3 {
 		margin: 40px 100px;
@@ -48,8 +53,8 @@
 	}
 
 	#img-wh{
-		width: 250px;
-		height: 250px;
+		width: 350px;
+		height: 350px;
 		margin-top: -400px;
 		margin-left: 800px;
 	}
@@ -59,6 +64,7 @@
 		padding: 20px;
 		width: 50%;
 		height: 400px;
+		margin-top: 150px;
 	}
 /*Logo*/
 
