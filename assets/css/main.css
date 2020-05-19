@@ -6,15 +6,27 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+	#glo {
+		line-height: 2em;
+	}
+
+	#glosario {
+		margin: 40px 100px;
+		padding: 20px;
+		width: 80%;
+		height: 400px;
 	
-#cont4 {
-	margin: 40px 100px;
-	padding: 20px;
-	width: 80%;
-	height: 400px;
-	margin-top: 350px;
+
+
+	#cont4 {
+		margin: 40px 100px;
+		padding: 20px;
+		width: 80%;
+		height: 400px;
+		margin-top: 320px;
 	
-}
+	}
 
 	#cont3 {
 		margin: 40px 100px;
@@ -48,10 +60,10 @@
 	}
 
 	#img-wh{
-		width: 250px;
-		height: 250px;
+		width: 320px;
+		height: 320px;
 		margin-top: -400px;
-		margin-left: 800px;
+		margin-left: 740px;
 	}
 
 	#cont1 {
