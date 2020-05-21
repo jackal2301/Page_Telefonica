@@ -7,9 +7,52 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 	
+	#btn-wh {
+		margin-left: 500px;
+		
+	}
+
+	
+	a.button {
+		-webkit-appearance: button;
+		-moz-appearance: button;
+		appearance: button;
+	
+		text-decoration: none;
+		color: initial;
+	}
+
+	#R-C5 {
+		width: 550PX;
+		height: 380px;
+		margin-left: 100px;
+	}
+	#R-C4 {
+		width: 550PX;
+		height: 350px;
+		margin-left: 100px;
+	}
+	#R-C3 {
+		width: 550PX;
+		height: 300px;
+		margin-left: 100px;
+	}
+	#R-C2 {
+		width: 550PX;
+		height: 320px;
+		margin-left: 100px;
+	}	
+	#R-C1 {
+		width: 550PX;
+		height: 410px;
+		margin-left: 100px;
+	}
+
 	#glo {
 		line-height: 2em;
-		margin: 40px 100px;
+		margin-top: 150px;
+		margin-left: 120px;
+
 	}
 
 	#cont4 {
@@ -31,9 +74,9 @@
 	}	
 	#table {
 		
-		width: 60%;
-		height: 200px;
-		margin-left: 250px;
+		width: 80%;
+		height: 350px;
+		margin-left: 150px;
 	
 	}
 
@@ -56,7 +99,7 @@
 		width: 350px;
 		height: 350px;
 		margin-top: -400px;
-		margin-left: 800px;
+		margin-left: 600px;
 	}
 
 	#cont1 {

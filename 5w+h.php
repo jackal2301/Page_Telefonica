@@ -25,7 +25,6 @@
 						<li>
 							<a href="#">Guías</a>
 							<ul>
-								<li><a href="CP.html">Casos de prueba</a></li>
 								<li><a href="PAP.html">PAP</a></li>
 								<li><a href="repositorio.html">Repositorio</a></li>
 								<li><a href="QM-RQM.html">QM Y RQM</a></li>
@@ -33,19 +32,22 @@
 							</ul>
 						</li>
 						<li><a href="formatos.html">Formatos</a></li>
-						<li><a href="5w+h.html">5W+H</a></li>
+						<li><a href="5w+h.php">5W+H</a></li>
 						<li><a href="glosario.html">Glosario</a></li>
 					</ul>
 				</nav>
 			</header>
 
 			<!-- Main -->
-	<section>
-		<container>
+	
+		<div class="container">
 		    <div id="main" class="wrapper style1">
 				<header class="major">
 					<h2 class="font-weight-bold">5W+H</h2>
 				</header>
+				<!-- descargar -->
+				<a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar Plantilla 5w+h</a>
+				<!-- descargar -->
 					<div id="cont1">
 						<p>La 5W+H es una metodología de
 							análisis empresarial que consiste en
@@ -114,7 +116,7 @@
 					</div>
 
 					<div id="cont4">
-						<h3 class="font-weight-bold" >Estrategia de pruebas ágiles 5w+h</h3>
+						<h3 class="font-weight-bold" >Ejemplo estrategia de pruebas ágiles 5w+h</h3>
 					
 						<table id="table" class="table table-bordered table-active">
 							<thead>
@@ -123,6 +125,7 @@
 								<th class="font-weight-bold" scope="col">5W+H</th>
 								<th class="font-weight-bold" scope="col">PREGUNTA</th>
 								<th class="font-weight-bold" scope="col">RESPUESTA</th>
+								<th class="font-weight-bold" scope="col">DEFINICIÓN</th>
 								
 							  </tr>
 							</thead>
@@ -130,28 +133,46 @@
 								<tr>							
 									<td>Why</td>
 									<td>Por que? (Propósito/Objetivo)</td>
-									
+									<td>Causa probable de que ocurra el problema.</td>
+									<td>Es conveniente que en esta participen todos los actores, ya que la opinión de todos es muy importante ya que las otras 4 preguntas se basan en esta.</td>
 								</tr>
 								<tr>
 									<td>Who</td>
 									<td>Quien? (Participantes/Responsables)</td>
+									<td>Participa en el problema.<br>O el área o puesto donde se presenta.</td>
+									<td>Todas aquellas personas que forman parte de la situación a resolver: Directivos, Jefes de area, Personal operativo, Proveedores de servicio.</td>
 
 								</tr>
 								<tr>
 									<td>What</td>
 									<td>Que? (Producto objeto de pruebas)</td>
+									<td>El problema</td>
+									<td>Establecer con claridad las caracteristicas del problema:
+										<ul>
+											<li>Humanas</li>
+											<li>Finacieras</li>
+											<li>Logisticas</li>
+											<li>Tecnológicas</li>
+										</ul>
+									</td>
 								</tr>
 								<tr>
 									<td>Where</td>
 									<td>Donde? (Lugar/Ambiente/Recursos)</td>
+									<td>Lugar donde ocurre el problema.</td>
+									<td>Determinar la zona de conflicto, ubicación fisicá y instalaciones, o el lugar dentro de un proceso productivo.</td>
 								</tr>
 								<tr>
 									<td>When</td>
 									<td>Cuando? (Proceso/Tiempo)</td>
+									<td>Referencia en el tiempo, en qué momento del día, o que fecha de corrección.<td>
+									<ts>Identifique el momento, horario, turnos de trabajo para resolver el problema.</ts>
 								</tr>
 								<tr>
 									<td>How</td>
 									<td>Como ? (Pricipios/Metodos/Tecnicas)</td>
+									<td>Forma en que ocurre el problema.</td>
+									<td>Secuencia de sucesos que forman o desencadenan el problema.</td>
 								</tr>
 
 
@@ -160,13 +181,37 @@
 
 					</div>
 			</div>
-		</container>
-	</section>
-	<footer id="footer" class="major">
-		<ul class="copyright">
-			<li>&copy; SQA. All rights reserved.</li>
-		</ul>
-	</footer>
+
+<!-- descargar archivo-->
+
+	
+
+<?php
+ if (isset($_GET['download_pptx'])){
+ $fileName = basename('Refuerzo 5W+H_20190328_v1.PPTX');
+ $filePath = 'subidas/'.$fileName;
+ if(!empty($fileName) && file_exists($filePath)){
+	 // Define headers
+	 header("Cache-Control: public");
+	 header("Content-Description: File Transfer");
+	 header("Content-Disposition: attachment; filename=$fileName");
+	 header("Content-Type: application/zip");
+	 header("Content-Transfer-Encoding: binary");
+	 header('Content-Length: ' . filesize($fileName));
+	 
+	 // Read the file
+	 readfile($filePath);
+	 exit;
+ }else{
+	 echo 'The file does not exist.';
+ }
+}
+?>
+</div>
+<!-- descargar archivo-->
+
+
+
 
 		
 		
