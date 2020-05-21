@@ -6,6 +6,22 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+	
+	#btn-wh {
+		margin-left: 500px;
+		
+	}
+
+	
+	a.button {
+		-webkit-appearance: button;
+		-moz-appearance: button;
+		appearance: button;
+	
+		text-decoration: none;
+		color: initial;
+	}
+
 	#R-C5 {
 		width: 550PX;
 		height: 380px;
@@ -23,7 +39,7 @@
 	}
 	#R-C2 {
 		width: 550PX;
-		height: 350px;
+		height: 320px;
 		margin-left: 100px;
 	}	
 	#R-C1 {
@@ -34,7 +50,9 @@
 
 	#glo {
 		line-height: 2em;
-		margin: 40px 100px;
+		margin-top: 150px;
+		margin-left: 120px;
+
 	}
 
 	#cont4 {

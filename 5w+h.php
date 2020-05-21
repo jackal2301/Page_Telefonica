@@ -25,7 +25,6 @@
 						<li>
 							<a href="#">Guías</a>
 							<ul>
-								<li><a href="CP.html">Casos de prueba</a></li>
 								<li><a href="PAP.html">PAP</a></li>
 								<li><a href="repositorio.html">Repositorio</a></li>
 								<li><a href="QM-RQM.html">QM Y RQM</a></li>
@@ -46,6 +45,9 @@
 				<header class="major">
 					<h2 class="font-weight-bold">5W+H</h2>
 				</header>
+				<!-- descargar -->
+				<a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar Plantilla 5w+h</a>
+				<!-- descargar -->
 					<div id="cont1">
 						<p>La 5W+H es una metodología de
 							análisis empresarial que consiste en
@@ -182,8 +184,10 @@
 
 <!-- descargar archivo-->
 
+	
+
 <?php
- 
+ if (isset($_GET['download_pptx'])){
  $fileName = basename('Refuerzo 5W+H_20190328_v1.PPTX');
  $filePath = 'subidas/'.$fileName;
  if(!empty($fileName) && file_exists($filePath)){
@@ -193,6 +197,7 @@
 	 header("Content-Disposition: attachment; filename=$fileName");
 	 header("Content-Type: application/zip");
 	 header("Content-Transfer-Encoding: binary");
+	 header('Content-Length: ' . filesize($fileName));
 	 
 	 // Read the file
 	 readfile($filePath);
@@ -200,11 +205,9 @@
  }else{
 	 echo 'The file does not exist.';
  }
+}
 ?>
-<a href="5w+h.php?file=Refuerzo 5W+H.ppt">Descargar fichero</a>
-
-
-		</div>
+</div>
 <!-- descargar archivo-->
 
 
