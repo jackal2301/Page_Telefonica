@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Right Sidebar - Landed by HTML5 UP</title>
+		<title>SQA-Telefónica</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -25,6 +25,7 @@
 						<li>
 							<a href="#">Guías</a>
 							<ul>
+								<li><a href="CP.html">Casos de prueba</a></li>
 								<li><a href="PAP.html">PAP</a></li>
 								<li><a href="repositorio.html">Repositorio</a></li>
 								<li><a href="QM-RQM.html">QM Y RQM</a></li>
@@ -49,37 +50,38 @@
 						<section>
 							<div id="glosario">
 								<p id="glo">
-									<ul><h3>Recordando dependencias flujo ágil RTC
+									<h3>Recordando dependencias flujo ágil RTC
 									</h3>
 									<p>En la siguiente imagen podemos observar el flujo que debe llevar el analista para plan de pruebas telefonica</p>
-									<img id="QM" src="images/QM.png"> 
-								</ul>
+									<img id="QM" src="images/QM.png"><br><br><br>
 								
+							<div>
 								<ul> 
 									<h3>Relación RTC --> RQM</h3>
 									<p>Por medio de la grafica podemos observar el paso a seguir cuando el analista debe almacenar todo el proceso realizado en un despliegue</p>
 
-									 <img id="pdp" src="images/pdp.png" 
+									 <img id="pdp" src="images/pdp.png"> 
 
 								</ul>
+							</div>
 								<ul>
 									<h3>Flujo Tarea en RTC y Relación con RQM
 									</h3>
 									<p>
 										<li>Se debe Crear un PDP en RQM con los respectivos Set, Casos y Script para poder enlazarlo con la Historia: 
 											(PDP , Set y Casos en estado Aprobado)
-											</li>
-											<li>Antes de Terminar la Tarea en RTC se deben ejecutar TODOS los respectivos Set / Casos desde RQM.Los Casos que no se lograron ejecutar dentro del Sprint se colocan en estado :  Deferred / Diferido (para tenerlos en cuenta si aplican para el próximo Sprint)
-											</li>
+										</li>
+										<li>Antes de Terminar la Tarea en RTC se deben ejecutar TODOS los respectivos Set / Casos desde RQM.Los Casos que no se lograron ejecutar dentro del Sprint se colocan en estado :  Deferred / Diferido (para tenerlos en cuenta si aplican para el próximo Sprint)
+										</li>
 									</p>
-
-									<img id="flujos" src="images/flujos.png"
 								</ul>
+									<img id="flujos" src="images/flujos.png"><br><br><br>
+								
 								<ul>
 									<h3>Relacionando la Tarea de RTC al PDP en RQM</h3>
 									<p>Desde la Historia en RTC se debe agregar el PDP en la pestaña “Enlaces” opción :  “Add Related” --> Add Related Test Plan  
 									</p>
-									<img id="la tarea" src="images/la tarea.png"
+									<img id="la tarea" src="images/la tarea.png"><br><br><br>
 								</ul>
 								<ul>
 									<h3>Nomenclaturas de PDP
@@ -115,88 +117,34 @@
 								<ul>
 									<h3>Nomenclaturas de Casos</h3>
 									<p>Casos de prueba:
-										<li> <br>SM_Aplicativo_Componente_Accion
+										<li>SM_Aplicativo_Componente_Accion
 										Ejemplo:        SM_APP_POS_ConsultaSaldo</li>
 										
-										<li><br>IN_Aplicativo_Producto_Caracteristica:
+										<li>IN_Aplicativo_Producto_Caracteristica:
 										Ejemplo:        IN_APP_POS_ClienteDeuda</li>
 										
-										<li><br>CM_Aplicativo_Producto_Verbo_Accion
+										<li>CM_Aplicativo_Producto_Verbo_Accion
 										Ejemplo:	CM_APP_POS_Modificar_Imei</li> 
 										
-										<li><br>CI_FlujoNegocio_Producto_Segmento_Actividad
+										<li>CI_FlujoNegocio_Producto_Segmento_Actividad
 										Ejemplo:       CI_SCL_POS_Corporativo_VentaE2E_ConsultaAPP</li>
 													
-										<li><br>CNF_AplicativoAprobar_TipoPrueba_AplicativoPrueba_Modulo
-										Ejemplo:       CNF_APP_Carga_ServicioConsultaSaldo_MetodoPrepago</li>
+										<li>CNF_AplicativoAprobar_TipoPrueba_AplicativoPrueba_Modulo
+										Ejemplo:       CNF_APP_Carga_ServicioConsultaSaldo_MetodoPrepago</li><br><br>
 
-										<br> (se debe generar el un registro de ejecución por cada caso)
 
+										<P>Para conocer más acerca de los casos de prueba, Ingresa <a href="CP.html">aquí</a></P>
 										
 									</p>
 								</ul>
-								<ul>
-									<h3>Nomenclaturas de Script</h3>
-								</ul>
-								<ul>
-									<h3></h3>
-								</ul>
-									
-										<h2 class="font-weight-bold" >Casos de prueba</h2>
-											<p>Es un conjunto de condiciones o variables bajo las cuales un analista determinará si una aplicación, un sistema de software (software system), o una característica de éstos es parcial o completamente satisfactoria. Es decir, un caso de prueba es un conjunto de pasos y resultados esperados que se crean a partir de los requisitos del software que se va a probar.</p>
-										<div id="CP-c1">
-											<h3 class="font-weight-bold" >Crear y ejecutar casos de prueba</h3>
-											<p>Un caso de prueba solo no significa mucho ya que solo es una pieza del rompecabezas y
-												una pieza por si sola no significa nada, por eso debemos agruparlos en areas y asignarles una prioridad
-												con esta prioridad sabemos que tan importante es un caso de prueba en un contexto y asi poder encontrar errores de manera temprana, para cumplir con esto tenemos algunos aspectos que son los siguientes:</p>
-												<ul>
-													<li>Frecuencia de uso de la funcionalidad o probabilidad de fallo del software.</li>
-													<li>Riesgo de falla.</li>
-													<li>Visibilidad de la falla ante el usuario final.</li>
-													<li>Prioridad de los requerimientos.</li>
-													<li>Perspectiva de desarrollo(arquitectura).</li>
-												</ul>
-										</div>
-										<img id="casos" src="images/Casos.png" >
-										
-										<div id="suites-c2">
-											<h3 class="font-weight-bold" >Suites de prueba</h3>
-											<p>Luego de que se tienen los casos de prueba organizados se deben agrupar en suites de pruebas, en ellas pueden haber casos de 
-												prueba funcionales<br> y no funcionales para finalmente conformar el plan de pruebas(PDP).<br> Siendo todo esto muy importante al momento de ejecutar casos de pruebas hay otros conceptos que debemos tener en cuenta tales como.</p>
-										</div>
-										<img id="suite" src="images/Suites.png" >
 
-										<div id="build-c3">
-											<h3 class="font-weight-bold">Build</h3>
-											<p>Luego de que se tienen los casos de prueba organizados se deben agrupar en suites de pruebas, en ellas pueden haber casos de 
-												prueba funcionales<br> y no funcionales para finalmente conformar el plan de pruebas(PDP).<br> Siendo todo esto muy importante al momento de ejecutar casos de pruebas hay otros conceptos que debemos tener en cuenta tales como.</p>
-										</div>
-										<img id="build" src="images/Build.png">
-
-										<div id="hu-c4">
-											<h3 class="font-weight-bold">Historia de Usuario</h3>
-											<p>Una historia de usuario es una representación de un requisito escrito en una o dos frases utilizando el lenguaje común del usuario. Las historias de usuario son utilizadas en las metodologías de desarrollo ágiles para la especificación de requisitos (acompañadas de las discusiones con los usuarios y las pruebas de validación). Cada historia de usuario debe ser limitada, ésta debería poderse escribir sobre una nota adhesiva pequeña.
-
-												Las historias de usuario son una forma rápida de administrar los requisitos de los usuarios sin tener que elaborar gran cantidad de documentos formales y sin requerir de mucho tiempo para administrarlos. Las historias de usuario permiten responder rápidamente a los requisitos cambiantes.que debemos tener en cuenta tales como:</p>
-												<ul>
-													<li>Independientes unas de otras</li>
-													<li>Negociables</li>
-													<li>Valoradas por los clientes o usuarios </li>
-													<li>Estimables</li>
-													<li>Pequeñas</li>
-													<li>Verificables</li>
-												</ul>
-										</div>
-										<img id="hu" src="images/hu.png">
-
-										<div id="fe-c5">
-											<h3 class="font-weight-bold">Formato Evidencias</h3>
-											<p>Con este formato podemos llevar las evidencias de los casos de prueba que realicemos.</p>
-											<img src="images/formato-cp.png">
-										</div>
-								</section>
+					</div>
+							</section>
 							</div>
 					</div>	
+
+	
+				</section>
 			</div>				
 		</div>				
 
