@@ -44,12 +44,12 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Elements</h2>
-							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+							<h2>Formatos</h2>
+							<p>Aquí podras encontrar los formatos que se utilizan en telefónica.</p>
 						</header>
 
 						<div>
-							<table id="table" class="table table-bordered table-active">
+							<table id="" class="table table-bordered table-active text-center">
 								<thead>
 								  <tr>
 	
@@ -60,15 +60,34 @@
 								</thead>
 								<tbody>
 									<tr>							
-										<td>Smoke</td>
-										<td>Probar instalación</td>
-										
+										<td>Refuerzo 5W+H_20190328_v1</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+									</tr>
+									<tr>							
+										<td>Plantilla 5W+H</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+									</tr>
+									<tr>							
+										<td>Ejercicio</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+									</tr>
+									<tr>							
+										<td>FORMATO_EVIDENCIAS</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
 									</tr>
 									<tr>
-										<td>Modular</td>
-										<td>Probar componente integrado</td>
-										
+										<td>Capacitacion QManager AT_Lineamientos_2018v2</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
 									</tr>
+									<tr>
+										<td>Cheklist PAP V 1.0</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+									</tr>
+									<tr>
+										<td>Recomendaciones PAP</td>
+										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+									</tr>
+									
 									
 	
 								</tbody>
@@ -111,3 +130,28 @@
 
 	</body>
 </html>
+
+
+<!--5W+H-->										<td>Modular</td>
+<?php
+ if (isset($_GET['download_pptx'])){
+ $fileName = basename('Refuerzo 5W+H_20190328_v1.PPTX');
+ $filePath = 'subidas/'.$fileName;
+ if(!empty($fileName) && file_exists($filePath)){
+	 // Define headers
+	 header("Cache-Control: public");
+	 header("Content-Description: File Transfer");
+	 header("Content-Disposition: attachment; filename=$fileName");
+	 header("Content-Type: application/zip");
+	 header("Content-Transfer-Encoding: binary");
+	 header('Content-Length: ' . filesize($fileName));
+	 
+	 // Read the file
+	 readfile($filePath);
+	 exit;
+ }else{
+	 echo 'The file does not exist.';
+ }
+}
+?>
+<!--5W+H-->	
