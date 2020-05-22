@@ -51,27 +51,89 @@
 								<p id="glo">
 									<ul><h3>Recordando dependencias flujo ágil RTC
 									</h3>
-									<img id="QM" src="images/QM.png">
+									<p>En la siguiente imagen podemos observar el flujo que debe llevar el analista para plan de pruebas telefonica</p>
+									<img id="QM" src="images/QM.png"> 
 								</ul>
+								
 								<ul> 
 									<h3>Relación RTC --> RQM</h3>
+									<p>Por medio de la grafica podemos observar el paso a seguir cuando el analista debe almacenar todo el proceso realizado en un despliegue</p>
+
+									 <img id="pdp" src="images/pdp.png" 
+
 								</ul>
 								<ul>
 									<h3>Flujo Tarea en RTC y Relación con RQM
 									</h3>
+									<p>
+										<li>Se debe Crear un PDP en RQM con los respectivos Set, Casos y Script para poder enlazarlo con la Historia: 
+											(PDP , Set y Casos en estado Aprobado)
+											</li>
+											<li>Antes de Terminar la Tarea en RTC se deben ejecutar TODOS los respectivos Set / Casos desde RQM.Los Casos que no se lograron ejecutar dentro del Sprint se colocan en estado :  Deferred / Diferido (para tenerlos en cuenta si aplican para el próximo Sprint)
+											</li>
+									</p>
+
+									<img id="flujos" src="images/flujos.png"
 								</ul>
 								<ul>
 									<h3>Relacionando la Tarea de RTC al PDP en RQM</h3>
+									<p>Desde la Historia en RTC se debe agregar el PDP en la pestaña “Enlaces” opción :  “Add Related” --> Add Related Test Plan  
+									</p>
+									<img id="la tarea" src="images/la tarea.png"
 								</ul>
 								<ul>
 									<h3>Nomenclaturas de PDP
 									</h3>
+									<p>PDP:
+										<br>PDP_NombreCélula_Sprint#_HU####_BreveDescripción</br>
+
+
+										<br>Ejemplo:
+										
+										PDP_APILUS_Sprint1_HU34151_BotonPagos
+										
+										PDP_SAAC_S34_HU36113_RecargaEnLinea
+									</br>
+									</p>
+										
+										
+									</p>
 								</ul>
 								<ul>
 									<h3>Nomenclaturas de Suite</h3>
+									<p>Suite:
+										<br>#PDP_TipoDePruebas (Tipos de Pruebas: Smoke , Insumo, Modular, Integral, No_Funcional)
+										<br>Ejemplo: 4122_PruebasModulares
+										<br>#PDP_PruebasSmoke
+										<br>#PDP_PruebasModulares
+										<br>#PDP_PruebasIntegrales
+										<br>#PDP_PruebasNoFuncionales
+										<br>#PDP_PruebasInsumo
+										<br>#PDP_PruebasContinuidad										
+										</p>								
 								</ul>
 								<ul>
 									<h3>Nomenclaturas de Casos</h3>
+									<p>Casos de prueba:
+										<li> <br>SM_Aplicativo_Componente_Accion
+										Ejemplo:        SM_APP_POS_ConsultaSaldo</li>
+										
+										<li><br>IN_Aplicativo_Producto_Caracteristica:
+										Ejemplo:        IN_APP_POS_ClienteDeuda</li>
+										
+										<li><br>CM_Aplicativo_Producto_Verbo_Accion
+										Ejemplo:	CM_APP_POS_Modificar_Imei</li> 
+										
+										<li><br>CI_FlujoNegocio_Producto_Segmento_Actividad
+										Ejemplo:       CI_SCL_POS_Corporativo_VentaE2E_ConsultaAPP</li>
+													
+										<li><br>CNF_AplicativoAprobar_TipoPrueba_AplicativoPrueba_Modulo
+										Ejemplo:       CNF_APP_Carga_ServicioConsultaSaldo_MetodoPrepago</li>
+
+										<br> (se debe generar el un registro de ejecución por cada caso)
+
+										
+									</p>
 								</ul>
 								<ul>
 									<h3>Nomenclaturas de Script</h3>
