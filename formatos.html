@@ -61,35 +61,42 @@
 								<tbody>
 									<tr>							
 										<td>Refuerzo 5W+H_20190328_v1</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/Refuerzo 5W+H_20190328_v1.PPTX" download="Refuerzo 5W+H_20190328_v1.PPTX">Descargar</a></td>
+
 									</tr>
 									<tr>							
 										<td>Plantilla 5W+H</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/Plantilla 5W+H.xlsx" download="Plantilla 5W+H.xlsx">Descargar</a></td>
 									</tr>
 									<tr>							
 										<td>Ejercicio</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/Ejercicio.docx" download="Ejercicio.docx">Descargar</a></td>
 									</tr>
 									<tr>							
 										<td>FORMATO_EVIDENCIAS</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/FORMATO_EVIDENCIAS.docx" download="FORMATO_EVIDENCIAS.docx">Descargar</a></td>
 									</tr>
 									<tr>
 										<td>Capacitacion QManager AT_Lineamientos_2018v2</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/Capacitacion QManager AT_Lineamientos_2018v2 (1) (1).pptx" download="Capacitacion QManager AT_Lineamientos_2018v2.pptx">Descargar</a></td>
+									
 									</tr>
 									<tr>
 										<td>Cheklist PAP V 1.0</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/Cheklist PAP V 1.0.xlsx" download="Cheklist PAP V 1.0.xlsx">Descargar</a></td>
 									</tr>
 									<tr>
 										<td>Recomendaciones PAP</td>
-										<td><a id="btn-wh" href="5w+h.php?download_pptx=1">Descargar</a></td>
+										<td><a href="subidas/Recomendaciones PAP.pptx" download="Recomendaciones PAP.pptx">Descargar</a></td>
 									</tr>
-									
-									
-	
+									<tr>
+										<td>Como descargar el versionamiento del Excel de casos automáticos</td>
+										<td><a href="subidas/Como descargar el versionamiento del Excel de casos automáticos.pdf" download="Como descargar el versionamiento del Excel de casos automáticos.pdf">Descargar</a></td>
+									</tr>
+									<tr>
+										<td>FORMA DE ORGANIZAR LA INFORMACIÓN EN EL REPOSITORIO</td>
+										<td><a href="subidas/FORMA DE ORGANIZAR LA INFORMACIÓN EN EL REPOSITORIO.pdf" download="FORMA DE ORGANIZAR LA INFORMACIÓN EN EL REPOSITORIO.pdf">Descargar</a></td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -98,19 +105,13 @@
 				</div>
 
 			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
+			<section>
+				<footer id="footer" class="major">
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; SQA. All rights reserved.</li>
 					</ul>
 				</footer>
+			</section>
 
 		</div>
 
@@ -132,26 +133,4 @@
 </html>
 
 
-<!--5W+H-->										<td>Modular</td>
-<?php
- if (isset($_GET['download_pptx'])){
- $fileName = basename('Refuerzo 5W+H_20190328_v1.PPTX');
- $filePath = 'subidas/'.$fileName;
- if(!empty($fileName) && file_exists($filePath)){
-	 // Define headers
-	 header("Cache-Control: public");
-	 header("Content-Description: File Transfer");
-	 header("Content-Disposition: attachment; filename=$fileName");
-	 header("Content-Type: application/zip");
-	 header("Content-Transfer-Encoding: binary");
-	 header('Content-Length: ' . filesize($fileName));
-	 
-	 // Read the file
-	 readfile($filePath);
-	 exit;
- }else{
-	 echo 'The file does not exist.';
- }
-}
-?>
-<!--5W+H-->	
+	
