@@ -5,12 +5,38 @@
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<<<<<<< HEAD
 */ 
 
 
+=======
+*/
+	#fe-c5 {
+		top: 3250px;
+		position: absolute;
+		width: 750px;
+		height: 350px;
+	}
+
+	#hu {
+		width: 280px;
+		height: 280px;
+		margin-top: 1300px;
+		position: absolute;
+		margin-left: 800px;	
+	}
+
+	#hu-c4 {
+		top: 2700px;
+		position: absolute;
+		width: 750px;
+		height: 350px;
+
+	}
+>>>>>>> 52d6295baa88e1178766cef37aa64c123ff5f4f1
 	#build {
 		width: 499px;
-		height: 250px;
+		height: 230px;
 		margin-top: 850px;
 		position: absolute;
 		margin-left: 100px;	
