@@ -9,8 +9,9 @@
 
 #ind {
 	width: 550px;
-	height: 500px;
+	height: 450px;
 	margin-left: 300px;
+	margin-top: -20px;
 }
 
 #fe-c5 {
@@ -131,7 +132,7 @@
 		margin-left: 650px;
 		width: 35%;
 		height: 400px;
-		margin-top: -450px;
+		margin-top: -410px;
 		
 	}	
 	#table {
@@ -147,7 +148,7 @@
 		padding: 20px;
 		width: 35%;
 		height: 400px;
-		margin-top: -100px;
+		margin-top: -50px;
 		
 	}
 
