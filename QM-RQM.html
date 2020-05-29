@@ -42,92 +42,102 @@
 			<div id="main" class="wrapper style1">
 				    <div class="container">
 						<header class="major">
-							<h2>Lineamientos en Células
-								En Rational Team Concert (RTC)
-								Y Quality Manager (QM)
-							</h2>
+							<h2 class="Nu-equ font-weight-bold">Rational Team Concert (RTC) Y Quality Manager (QM)</h2>
 						</header>
 						
 							<div id="glosario">
 								<p id="glo">
-									<h3>Recordando dependencias flujo ágil RTC
-									</h3>
-									<p>En la siguiente imagen podemos observar el flujo que debe llevar el analista para plan de pruebas telefonica</p>
-									<img id="QM" src="images/QM.png"><br><br><br>
+									<h3 class="font-weight-bold">Recordando dependencias flujo ágil RTC</h3>
+										<li>En la siguiente imagen podemos observar el flujo que debe llevar el analista para plan de pruebas telefonica</li>
+										
+										<img id="QM" src="images/QM.png"><br><br><br>
 								
 								<div>
-									<ul> 
-										<h3>Relación RTC --> RQM</h3>
-										<p>Por medio de la grafica podemos observar el paso a seguir cuando el analista debe almacenar todo el proceso realizado en un despliegue</p>
+									<h3 class="font-weight-bold">Relación RTC --> RQM</h3>
+										<li>Por medio de la grafica podemos observar el paso a seguir cuando el analista debe almacenar todo el proceso realizado en un despliegue</li>
 
 										<img id="pdp" src="images/pdp.png"> 
-									</ul>
 								</div>
-									<ul>
-										<h3>Flujo Tarea en RTC y Relación con RQM
-										</h3>
-										
+								<div>
+									<h3 class="font-weight-bold">Flujo Tarea en RTC y Relación con RQM</h3>
+										<ul>
 											<li>Se debe Crear un PDP en RQM con los respectivos Set, Casos y Script para poder enlazarlo con la Historia: 
-												(PDP , Set y Casos en estado Aprobado)</li>
+											(PDP , Set y Casos en estado Aprobado)</li>
 											<li>Antes de Terminar la Tarea en RTC se deben ejecutar TODOS los respectivos Set / Casos desde RQM.Los Casos que no se lograron ejecutar dentro del Sprint se colocan en estado :  Deferred / Diferido (para tenerlos en cuenta si aplican para el próximo Sprint)</li>
-									</ul>
+										</ul>
+										
 										<img id="flujos" src="images/flujos.png"><br><br><br>
-								
-									<ul>
-										<h3>Relacionando la Tarea de RTC al PDP en RQM</h3>
-										<p>Desde la Historia en RTC se debe agregar el PDP en la pestaña “Enlaces” opción :  “Add Related” --> Add Related Test Plan  
-										</p>
+								</div>
+								<div>
+									<h3 class="font-weight-bold">Relacionando la Tarea de RTC al PDP en RQM</h3>
+										<ul>
+											<li>Desde la Historia en RTC se debe agregar el PDP en la pestaña “Enlaces” opción :  “Add Related” --> Add Related Test Plan</li>  
+										</ul>
 										<img id="la tarea" src="images/la tarea.png"><br><br><br>
-									</ul>
-									<ul>
-										<h3>Nomenclaturas de PDP
-										</h3>
-										<p>PDP: PDP_NombreCélula_Sprint#_HU####_BreveDescripción</p>
-											
+								</div>
+								<div>	
+									<h3 class="font-weight-bold">Nomenclaturas de PDP</h3>
+										<h4>PDP</h4> 
+											<ul>
+												<li>PDP_NombreCélula_Sprint#_HU####_BreveDescripción</li>
+											</ul>
+										<p>Ejemplo:</p>
+											<ul>
+												<li>PDP_APILUS_Sprint1_HU34151_BotonPagos</li>
+												<li>PDP_SAAC_S34_HU36113_RecargaEnLinea</li>
+											</ul>
+								</div>
+								<div>										
+									<h3 class="font-weight-bold">Nomenclaturas de Suite</h3>
+										<h4>Suite</h4>
+											<ul>
+												<li>#PDP_TipoDePruebas (Tipos de Pruebas: Smoke , Insumo, Modular, Integral, No_Funcional)</li>
+												<li>Ejemplo: 4122_PruebasModulares</li>
+												<li>#PDP_PruebasSmoke</li>
+												<li>#PDP_PruebasModulares</li>
+												<li>#PDP_PruebasIntegrales</li>
+												<li>#PDP_PruebasNoFuncionales</li>
+												<li>#PDP_PruebasInsumo</li>
+												<li>#PDP_PruebasContinuidad</li>
+											</ul>									
+								</div>
+								<div>
+									<h3 class="font-weight-bold">Nomenclaturas de Casos</h3>
+										<h4>Casos de prueba</h4>
+											<ul>
+												SM_Aplicativo_Componente_Accion
+													<ul>
+														<li>Ejemplo:SM_APP_POS_ConsultaSaldo</li>
+													</ul>
+											</ul>
+											<ul>
+												IN_Aplicativo_Producto_Caracteristica
+													<ul>
+														<li>Ejemplo:IN_APP_POS_ClienteDeuda</li>
+													</ul>
+											</ul>
+											<ul>
+												CM_Aplicativo_Producto_Verbo_Accion
+													<ul>
+														<li>Ejemplo:	CM_APP_POS_Modificar_Imei</li>
+													</ul>
+											</ul>
+											<ul>
+												CI_FlujoNegocio_Producto_Segmento_Actividad
+													<ul>
+														<li>Ejemplo:       CI_SCL_POS_Corporativo_VentaE2E_ConsultaAPP</li>
+													</ul>
+											</ul>
+											<ul>
+												CNF_AplicativoAprobar_TipoPrueba_AplicativoPrueba_Modulo
+													<ul>
+														<li>Ejemplo:       CNF_APP_Carga_ServicioConsultaSaldo_MetodoPrepago</li>
+													</ul>
+											</ul>
 
-
-											<br>Ejemplo:
-											
-											PDP_APILUS_Sprint1_HU34151_BotonPagos
-											
-											PDP_SAAC_S34_HU36113_RecargaEnLinea
-										</br>
-										</p>
-									</ul>
-									<ul>
-										<h3>Nomenclaturas de Suite</h3>
-										<p>Suite:
-											<li>#PDP_TipoDePruebas (Tipos de Pruebas: Smoke , Insumo, Modular, Integral, No_Funcional)</li>
-											<li>Ejemplo: 4122_PruebasModulares</li>
-											<li>#PDP_PruebasSmoke</li>
-											<li>#PDP_PruebasModulares</li>
-											<li>#PDP_PruebasIntegrales</li>
-											<li>#PDP_PruebasNoFuncionales</li>
-											<li>#PDP_PruebasInsumo</li>
-											<li>#PDP_PruebasContinuidad	</li>									
-										</p>								
-									</ul>
-									<ul>
-										<h3>Nomenclaturas de Casos</h3>
-										<p>Casos de prueba:
-											<li>SM_Aplicativo_Componente_Accion
-											Ejemplo:        SM_APP_POS_ConsultaSaldo</li>
-											
-											<li>IN_Aplicativo_Producto_Caracteristica:
-											Ejemplo:        IN_APP_POS_ClienteDeuda</li>
-											
-											<li>CM_Aplicativo_Producto_Verbo_Accion
-											Ejemplo:	CM_APP_POS_Modificar_Imei</li> 
-											
-											<li>CI_FlujoNegocio_Producto_Segmento_Actividad
-											Ejemplo:       CI_SCL_POS_Corporativo_VentaE2E_ConsultaAPP</li>
-														
-											<li>CNF_AplicativoAprobar_TipoPrueba_AplicativoPrueba_Modulo
-											Ejemplo:       CNF_APP_Carga_ServicioConsultaSaldo_MetodoPrepago</li><br><br>
-
-										</p>
 											<P>Para conocer más acerca de los casos de prueba, Ingresa <a href="CP.html">aquí</a></p>
-									</ul>
+									
+								</div>	
 							</div>
 					</div>
 			</div>	
