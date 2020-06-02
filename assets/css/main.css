@@ -7,35 +7,57 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */ 
 
-#ind {
-	width: 650px;
-	height: 450px;
-	margin-left: 300px;
-	margin-top: -20px;
-}
 
-#fe-c5 {
-	top: 3320px;
-	position: absolute;
-	width: 750px;
-	height: 350px;
-}
 
-#hu {
-	width: 280px;
-	height: 280px;
-	margin-top: 800px;
-	position: absolute;
-	margin-left: 800px;	
-}
+	#tarea {
+		width: 520px;
+		height: 320px;
+	}
 
-#hu-c4 {
-	top: 1350px;
-	position: absolute;
-	width: 750px;
-	height: 350px;
+	#flujo {
+		width: 600px;
+		height: 350px;
+	}
 
-}
+	#pdp {
+		width: 580px;
+		height: 310px;
+	}
+
+	#QM {
+		width: 520px;
+		height: 320px;
+	}
+
+	#ind {
+		width: 650px;
+		height: 450px;
+		margin-left: 300px;
+		margin-top: -20px;
+	}
+
+	#fe-c5 {
+		top: 3320px;
+		position: absolute;
+		width: 750px;
+		height: 350px;
+	}
+
+	#hu {
+		width: 280px;
+		height: 280px;
+		margin-top: 800px;
+		position: absolute;
+		margin-left: 800px;	
+	}
+
+	#hu-c4 {
+		top: 1450px;
+		position: absolute;
+		width: 750px;
+		height: 350px;
+
+	}
 
 	#build {
 		width: 499px;
@@ -134,12 +156,24 @@
 		height: 400px;
 		margin-top: -410px;
 		
-	}	
+	}
+	
+	tbody a:hover{
+		color: rgb(13, 97, 253);
+		opacity: .9;
+	}
+
+	tbody a {
+		color: rgba(243,160,0,1);
+	}
 	#table {
-		
+		text-align: center;
+		border: 3px solid rgba(243,160,0,1);
+		background-color: rgba(255, 248, 220, 0.781);
 		width: 80%;
 		height: 350px;
 		margin-left: 150px;
+		color: black;
 	
 	}
 
