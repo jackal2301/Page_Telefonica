@@ -2,12 +2,115 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 /*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+SQA || Derechos reservados
 */ 
 
+	#Nu-equ1 {
+		color: white;
+		}
 
+	#table2 {
+		border: 3px solid #4d4e50;
+		border-collapse: collapse;
+		background-color: #4d4e50;
+
+	}
+
+	#table2 thead tr th {
+		border: 3px solid #4d4e50;
+		background-color: #4d4e50;
+	}
+
+	#table2 tbody tr td {
+		border: 3px solid #4d4e50;
+		background-color: #4d4e50;
+	}
+
+	#table2_info {
+		color: white;
+		font-size: 14px;
+	}
+
+	#header1 {
+		
+		background: #30343f;
+		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+		cursor: default;
+		height: 5.1em;
+		left: 5;
+		line-height: 3.5em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		font-size: 17px;
+	}
+	#header1 nav  {
+		position: absolute;
+		right: 1em;
+		top: 10px;
+		font-weight: bold;
+	}
+
+		#header1 nav ul {
+			margin: 0;
+		}
+
+			#header1 nav ul li {
+				display: inline-block;
+				margin-left: 1.1em;
+			}
+
+				#header1 nav ul li a, #header1 nav ul li span {
+					border: 0;
+					color: inherit;
+					display: inline-block;
+					height: inherit;
+					line-height: inherit;
+					outline: 0;
+				}
+
+					#header1 nav ul li a.button, #header1 nav ul li span.button {
+						height: 2em;
+						line-height: 2em;
+						padding: 0 1.25em;
+					}
+
+					#header1 nav ul li a:not(.button):before, #header1 nav ul li span:not(.button):before {
+						margin-right: 0.5em;
+					}
+
+				#header1 nav ul li.active > a, #header1 nav ul li.active > span {
+					color: #ffffff;
+				}
+
+				#header1 nav ul li > ul {
+					display: none;
+				}
+
+	#nav1 {
+		
+		font-family: "Roboto", Helvetica, sans-serif;
+		color: white;
+	}
+
+	#table1 {
+		border: 3px solid rgba(243,160,0,1);
+		background-color: rgba(255, 248, 220, 0.781);
+	}
+
+	#table1 thead tr th {
+		border: 3px solid rgba(243,160,0,1);
+	}
+
+	#table1 tbody tr td {
+		background-color: rgba(255, 248, 220, 0.781);
+	}
+
+	#table1_info {
+		color: white;
+		font-size: 14px;
+	}
 
 	#tarea {
 		width: 520px;
@@ -158,14 +261,6 @@
 		
 	}
 	
-	tbody a:hover{
-		color: rgb(13, 97, 253);
-		opacity: .9;
-	}
-
-	tbody a {
-		color: rgba(243,160,0,1);
-	}
 	#table {
 		text-align: center;
 		border: 3px solid rgba(243,160,0,1);
@@ -176,6 +271,12 @@
 		color: black;
 	
 	}
+
+
+	tbody a {
+		color: rgba(243,160,0,1);
+	}
+
 
 	#cont2 {
 		margin: 40px 100px;
